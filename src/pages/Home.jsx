@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import { Search } from 'lucide-react'
+import Random from './Random'
 
 const Home = () => {
 
   useEffect(() => {
-    getFood()
+    getRandomFood()
   },[])
 
-  const getFood = async () => {
+  const getRandomFood = async () => {
     const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_REACT_APP_API_KEY}&number=3`)
     const data = await api.json()
 
-    // console.log(data.recipes)
-    data.recipes.map(d => console.log(d.title))
+    return data
   }
   return (
     <div className='h-full w-full'>
@@ -24,6 +24,7 @@ const Home = () => {
           <input type="text" placeholder='Search..' className=' outline-none border-none bg-transparent text-white w-[400px]'/>
          </div>
       </div>
+      <Random/>
     </div>
   )
 }

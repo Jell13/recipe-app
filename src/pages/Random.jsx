@@ -9,7 +9,7 @@ const Random = () => {
   },[])
 
   const getRandomFood = async () => {
-    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_REACT_APP_API_KEY}&number=3`)
+    const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_REACT_APP_API_KEY}&number=9`)
     const data = await api.json()
     console.log(data.recipes)
     setRandom(data.recipes)
@@ -21,7 +21,11 @@ const Random = () => {
         Random
         <div className='grid grid-cols-3 gap-3'>
           {random.map(food => (
-            <Food key={food.id} food={food}/>
+            <div>
+              <div>
+
+              </div>
+            </div>
           ))}
         </div>
       </div>

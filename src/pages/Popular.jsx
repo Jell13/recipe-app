@@ -38,9 +38,8 @@ const Popular = () => {
           {popular.map(food => (
             <SplideSlide key={food.id}>
               <div className='overflow-hidden rounded-md relative'>
-                <p className='absolute bottom-0 flex justify-center items-center text-center text-white p-2 bg-transparent bg-gray-700 rounded-lg bg-opacity-40'>{food.title}</p>
+                <p className='absolute bottom-0 flex justify-center items-center text-center text-white p-2 bg-gray-800 rounded-lg bg-opacity-55'>{food.title}</p>
                 <img className='rounded-xl left-0 object-cover w-full' src={food.image} alt="" />
-                <div className='w-full h-full '></div>
               </div>
             </SplideSlide>
           ))}

@@ -10,7 +10,7 @@ const Home = () => {
     <div className='h-full w-full'>
       <Navbar/>
       <div className='w-full flex justify-center items-center mt-10'>
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-5'>
           <div className='flex items-center bg-gray-800 p-2 gap-3 rounded-lg'>
             <Search className='text-white'/>
             <input type="text" placeholder='Search..' className=' outline-none border-none bg-transparent text-white w-[400px]'/>

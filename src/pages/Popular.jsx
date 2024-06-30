@@ -17,15 +17,22 @@ const Popular = () => {
   }
 
   return (
-    <div className='w-full h-full mt-20'>
-        <div className=' my-16'>
-          <h2 className='font-bold text-xl'>Popular Food</h2>
-          <Splide>
+    <div className='mt-20'>
+        <div className='my-16'>
+          <h2 className='font-bold text-xl my-8'>Popular Food</h2>
+          <Splide options={{
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            drag: "free",
+            gap: "5rem"
+          }}>
           {popular.map(food => (
             <SplideSlide>
-              <div className=' overflow-hidden min-h-96 rounded-md'>
-                <h3 className='font-medium'>{food.title}</h3>
-                <img className='rounded-xl' src={food.image} alt="" />
+              <div className='overflow-hidden rounded-md relative'>
+                <p className='absolute bottom-0 flex justify-center items-center text-center text-white p-2 bg-transparent bg-gray-700 rounded-lg bg-opacity-40'>{food.title}</p>
+                <img className='rounded-xl left-0 object-cover w-full' src={food.image} alt="" />
+                <div className='w-full h-full '></div>
               </div>
             </SplideSlide>
           ))}

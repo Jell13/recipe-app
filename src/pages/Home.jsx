@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import { Search } from 'lucide-react'
-import Random from './Random'
 import { data } from 'autoprefixer'
+import Popular from './Popular'
 
 const Home = () => {
 
@@ -15,7 +15,7 @@ const Home = () => {
           <input type="text" placeholder='Search..' className=' outline-none border-none bg-transparent text-white w-[400px]'/>
          </div>
       </div>
-      <Random/>
+      <Popular/>
     </div>
   )
 }

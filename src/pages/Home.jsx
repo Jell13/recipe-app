@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import { Beef, Pizza, Salad, Sandwich, Search } from 'lucide-react'
 import { data } from 'autoprefixer'
-import Popular from './Popular'
+import Popular from '../components/Popular'
+import Veggies from '../components/Veggies'
 
 const Home = () => {
 
   return (
     <div className='h-full w-full'>
-      <Navbar/>
+      {/* <Navbar/>
       <div className='w-full flex justify-center items-center mt-10'>
         <div className='flex flex-col gap-5'>
           <div className='flex items-center bg-gray-800 p-2 gap-3 rounded-lg'>
@@ -30,7 +31,8 @@ const Home = () => {
             </div>
           </div>
          </div>
-      </div>
+      </div> */}
+      <Veggies/>
       <Popular/>
     </div>
   )

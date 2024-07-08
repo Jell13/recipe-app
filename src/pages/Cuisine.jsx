@@ -20,10 +20,11 @@ const Cuisine = () => {
   }
 
   return (
-    <div className='grid items-center justify-center grid-cols-3 gap-12'>
+    <div className='grid items-center justify-center grid-cols-3 gap-12 mt-20'>
       {cuisine.map(food => (
         <div>
           <img src={food.image} className='rounded-[2rem]' alt="" />
+          <h4 className='p-4'>{food.title}</h4>
         </div>
       ))}
     </div>

@@ -29,7 +29,7 @@ const Popular = () => {
         <div className='my-16'>
           <h2 className='font-bold text-xl my-8'>Popular picks</h2>
           <Splide options={{
-            perPage: 3,
+            perPage: 4,
             arrows: false,
             pagination: false,
             drag: "free",

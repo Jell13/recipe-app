@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const Category = () => {
   return (
-    <div className="flex gap-10 justify-center items-center text-white mt-20">
+    <div className="flex gap-10 justify-center items-center text-white mt-10">
       <NavLink to={"/cuisine/american"} className="flex flex-col justify-center items-center w-20 h-20 rounded-full bg-gray-800 hover:bg-slate-400 duration-500">
         <GiSteak size={30}/>
         <h3 className="text-sm">American</h3>

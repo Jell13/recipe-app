@@ -25,7 +25,7 @@ const Popular = () => {
   }
 
   return (
-    <div className='mt-20'>
+    <div className='mt-10'>
         <div className='my-16'>
           <h2 className='font-bold text-xl my-8'>Popular picks</h2>
           <Splide options={{

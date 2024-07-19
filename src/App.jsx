@@ -4,6 +4,7 @@ import Category from "./components/Category"
 import Search from "./components/Search"
 import Home from "./pages/Home"
 import Pages from "./pages/Pages"
+import Navbar from "./components/Navbar"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <div className="lg:px-32 px-12">
         <BrowserRouter>
+          <Navbar/>
           <Search/>
           <Category/>
           <Pages/>

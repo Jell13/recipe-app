@@ -1,4 +1,7 @@
+
+const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -11,5 +14,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [plugin(function({ addVariant }) {
+    addVariant('current', '&.active');
+})],
 }
